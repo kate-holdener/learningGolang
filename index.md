@@ -1,1 +1,4 @@
-# Golang Learning Progress
+---
+title: Welcome to my blog
+---
+
