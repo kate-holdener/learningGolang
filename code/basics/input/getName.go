@@ -6,9 +6,9 @@ import (
    "os"
 )
 
-func GetUserName(){
+func GetUserName() string{
    reader:= bufio.NewReader(os.Stdin)
    fmt.Print("Enter text: ")
-   text:= reader.ReadString('\n')
+   text,_:= reader.ReadString('\n')
    return text
 }

@@ -1,10 +1,10 @@
 package main
 import (
    "fmt"
-   "input"
+   "basics/input"
 )
 
 func main(){
-   name:=getName.GetUserName()
+   name:=input.GetUserName()
    fmt.Println("Hello "+name)
 }
