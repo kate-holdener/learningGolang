@@ -41,7 +41,7 @@ go mod init <project_name>
 ```
 The main entry point into the program is the main function, which must be in a file containing: <code>package main</code> at the top. You can add other functions to the same file or import them from other files. To import code from other files, add: 
 ```import "project_name/<dir_name>"```
-This will import the packages contained in <dir_name>. In the <dir_name> directory, add .go files with your code, and give them a package name at the top with:
+This will import the packages contained in \<dir_name\>. In the \<dir_name\> directory, add .go files with your code, and give them a package name at the top with:
 ```package package_name```
-Then (once imported), you can reference the functions you wrote with <package_name>.<function_name>.
+Then (once imported), you can reference the functions you wrote with \<package_name\>.\<function_name\>.
 
