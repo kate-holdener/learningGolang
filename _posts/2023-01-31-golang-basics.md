@@ -2,14 +2,14 @@
 title: A Frustrating Start
 date: 2023-01-31
 ---
-==Long-winded Details==
+##Long-winded Details
 I started learning Golang by using ChatGPT, which provides a nice interactive environment. First, I installed golang on my Mac by downloading a dmg package from here: https://go.dev/dl/ and installing it.
 
 I learned about a basic <a href="https://github.com/kate-holdener/learningGolang/blob/main/code/basics/helloWorld.go">Hello World</a> program. There is a 1-step and a 2-step way to build and run a Golang program. The 1-step process is with <code>go run fileName.go</code>. I am guessing this compiles and runs the code (although, I am not seeing where the compiled binary is). 
 
 The 2-step process is:
 1. <code>go build fileName.go</code>
-2. </code>./fileName</code>
+2. <code>./fileName</code>
 
 My problem witht he 2-step process is that there isn't a good way to exclude the compiled binary from getting committed to the git repository, since it doesn't have any special extension. This is something I want to dig into deeper later.
 
@@ -34,10 +34,10 @@ import basics/input
 
 I was curious about the connection between the directory name and package name. So I kept the 'input' as the directory name and changed the package to userInput. Turns out, the 'import' statement refers to the directory (not the package). When using code from a package, I need to mention the package name explicitly. <a href="https://golangbyexample.com/package-folder-name-golang/">This resource</a> was very instrumental to my understanding of this finer point.
 
-==Summary==
+##Summary
 When starting a golang project, create a directory and initialize the project with:
 ``` 
 go mod init <project_name>
 ```
-The main entry point into the program is the main function, which must be in a file containing: <code>package main</code> at the top. You can add other functions to the same file or import them from other files. To import code from other files, add: <code>import "project\_name/\<dir\_name\>"</code>. This will import the packages contained in \<dir\_name\>. In the \<dir\_name\> directory, add .go files with your code, and give them a package name at the top with: <code>package package\_name</code>. Then (once imported), you can reference the functions you wrote with \<package\_name\>.\<function\_name\>.
+The main entry point into the program is the main function, which must be in a file containing: <code>package main</code> at the top. You can add other functions to the same file or import them from other files. To import code from other files, add: <code>import "project_name/<dir_name>"</code>. This will import the packages contained in <dir_name>. In the <dir_name> directory, add .go files with your code, and give them a package name at the top with: <code>package package_name</code>. Then (once imported), you can reference the functions you wrote with <package_name>.<function_name>.
 
