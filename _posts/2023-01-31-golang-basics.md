@@ -2,7 +2,7 @@
 title: A Frustrating Start
 date: 2023-01-31
 ---
-##Long-winded Details
+<h1>Long-winded Details</h1>
 I started learning Golang by using ChatGPT, which provides a nice interactive environment. First, I installed golang on my Mac by downloading a dmg package from here: https://go.dev/dl/ and installing it.
 
 I learned about a basic <a href="https://github.com/kate-holdener/learningGolang/blob/main/code/basics/helloWorld.go">Hello World</a> program. There is a 1-step and a 2-step way to build and run a Golang program. The 1-step process is with <code>go run fileName.go</code>. I am guessing this compiles and runs the code (although, I am not seeing where the compiled binary is). 
@@ -34,7 +34,7 @@ import basics/input
 
 I was curious about the connection between the directory name and package name. So I kept the 'input' as the directory name and changed the package to userInput. Turns out, the 'import' statement refers to the directory (not the package). When using code from a package, I need to mention the package name explicitly. <a href="https://golangbyexample.com/package-folder-name-golang/">This resource</a> was very instrumental to my understanding of this finer point.
 
-##Summary
+<h1>Summary</h1>
 When starting a golang project, create a directory and initialize the project with:
 ``` 
 go mod init <project_name>
